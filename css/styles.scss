@@ -1,0 +1,129 @@
+---
+---
+
+/* header scss */
+
+.header-title {
+  text-align: center;
+  font-size: 20px;
+  color:white;
+  background-color: green;
+}
+.header-secondary {
+  .logo {
+    height: 15%;
+    width: 15%;
+    display: inline-block;
+  }
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    a {
+      font-size: 1.2em;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: black;
+    }
+    a:hover{
+      color: green;
+      text-decoration: none;
+    }
+    a:visited{
+      color: black;
+      text-decoration: none;
+    }
+
+}
+body {
+}
+
+/* slideshow */
+
+
+
+#wrapper {
+  width: max;
+  margin: 0px auto 0;
+}
+
+#wrapper p {
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-family: "Arial Black", sans-serif;
+  text-shadow: 2px 2px #555;
+  margin: 10% 0;
+}
+
+#slideshow {
+  border: 1px solid #fff;
+  background: url(http://lab.mthibault.ca/external/img/roto01.jpg) no-repeat; /* this default image will show where browsers unable to process the [animation] function */
+  background-size: contain;
+  width: max;
+  height: 425px;
+  /* animation */
+  -webkit-animation: slider 10s infinite ease-in-out;
+  -webkit-animation-direction: alternate;
+  animation: slider 10s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    background: url(http://lab.mthibault.ca/external/img/roto01.jpg);
+  }
+  25% {
+    background: url(http://lab.mthibault.ca/external/img/roto02.jpg);
+  }
+  50% {
+    background: url(http://lab.mthibault.ca/external/img/roto03.jpg);
+  }
+  100% {
+    background: url(http://lab.mthibault.ca/external/img/roto04.jpg);
+  }
+}
+
+@keyframes slider {
+  0% {
+    background: url(http://lab.mthibault.ca/external/img/roto01.jpg);
+  }
+  25% {
+    background: url(http://lab.mthibault.ca/external/img/roto02.jpg);
+  }
+  50% {
+    background: url(http://lab.mthibault.ca/external/img/roto03.jpg);
+  }
+  100% {
+    background: url(http://lab.mthibault.ca/external/img/roto04.jpg);
+  }
+}
+
+.logo {
+	text-align:right;
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper {
+    width: 90%;
+	margin:1em auto;
+  }
+
+  #wrapper p {
+ font-size: 1.25em;
+ letter-spacing:0.15em;
+ text-shadow: 2px 1px #000;
+ overflow:hidden;
+ }
+
+  #slideshow {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  #slideshow img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .logo {text-align:center;}
+}
