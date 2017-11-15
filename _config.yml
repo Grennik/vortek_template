@@ -18,10 +18,9 @@ email: joey.ciervo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here.
 keywords: Day Care, Angel Watch, Angelwatch
-baseurl: "https://github.com/Grennik/vortek_template" # the subpath of your site, e.g. /blog
-url: "https://github.com/Grennik/vortek_template" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: grennik
-
 # Build settings
 markdown: kramdown
 theme: minima
