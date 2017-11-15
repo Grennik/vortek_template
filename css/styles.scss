@@ -5,11 +5,12 @@
 
 .header-title {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5em;
   padding-top: 5px;
   padding-bottom: 5px;
   color:white;
-  background-color: green;
+  background-color: #7cbd68;
+  font-family: 'Quattrocento', serif;
 }
 .header-secondary {
   background-color: white;
@@ -23,17 +24,19 @@
     text-align: center;
 
     a {
-      font-size: 1.2em;
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.5em;
+      font-weight: bold;
       padding-left: 15px;
       padding-right: 15px;
-      color: black;
+      color: green;
     }
     a:hover{
-      color: green;
+      color: black;
       text-decoration: none;
     }
     a:visited{
-      color: black;
+      color: green;
       text-decoration: none;
     }
 }
@@ -41,7 +44,8 @@
 /* footer scss */
 
 footer{
-  background-color: green;
+  font-family: 'Indie Flower', cursive;
+  background-color: #7cbd68;
   color: white;
 
   a.fa {
@@ -69,7 +73,7 @@ footer{
   .right{
     text-align: left;
     padding-top: 21px;
-    font-size: 1.125em;
+    font-size: 1.5em;
   }
   .left{
     text-align: right;
@@ -79,6 +83,9 @@ footer{
 
 
 /* constants */
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
 
 * {
     box-sizing: border-box;
@@ -124,10 +131,10 @@ footer{
 /* landing page */
 
 body {
-  background-color: #d4ee9f;
+  background-color: #ffe2bd;
 }
 #landing-page{
-
+  font-family: 'Indie Flower', cursive;
   .angelwatch {
     display: block;
     margin-left: auto;
@@ -139,6 +146,7 @@ body {
     padding-bottom: 25px;
   }
   .lead-title {
+    font-weight: bold;
     font-size: 2em;
     padding-bottom: 25px;
   }
@@ -146,10 +154,11 @@ body {
     font-size: 1.3em;
   }
   .box-element{
-    border: 1px green solid;
+    border: 1px #7cbd68 solid;
     border-radius: 10px;
-    background-color: white;
+    background-color: #ffd37f;
     h3{
+      font-weight: bold;
       padding-left: 30px;
       padding-top: 30px;
       padding-right: 30px;
@@ -187,6 +196,22 @@ body {
       color: white;
       text-decoration: none;
     }
+  }
+  .toy-text{
+    text-align: center;
+    color: black;
+  }
+  .toy-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .toy-link:hover{
+    text-decoration: none;
+  }
+  .toy-link:visited{
+    text-decoration: none;
   }
 }
 
